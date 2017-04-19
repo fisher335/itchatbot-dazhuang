@@ -29,12 +29,11 @@ def login():
 
 
 @app.route('/reboot/', methods=['POST'])
-def rboot():
+def reboot():
     if request.form.get('reboot') == 'shaomina':
-        # os.system(
-        #     'ps -ef | grep main.py | grep -v grep | cut -c 9-15 | xargs kill -s 9')
+        os.system(
+            'ps -ef | grep main.py | grep -v grep | cut -c 9-15 | xargs kill -s 9')
 
-        __import__('main')
         return alert('重启服务成功,请扫描登录')
     else:
         return alert('密码错误')
