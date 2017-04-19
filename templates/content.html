@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block body %}
+    {% for i in content %}
+    {{ i }}<br>
+    {% endfor %}
+{% endblock %}
+{% block foot %}
+    <input type="button" value = '点击返回' onclick="window.history.go(-1)">
+{% endblock %}

@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+  <category><pattern>杨 涛 * 电 话</pattern><template><srai>杨 涛 电 话</srai> </template> </category>
+  <category><pattern>* 杨 涛 的 电 话</pattern><template><srai>杨 涛 电 话</srai> </template> </category>
+  <category><pattern>杨 涛 * 电 话 *</pattern><template><srai>杨 涛 电 话</srai> </template></category>
+  <category><pattern>* 杨 涛 电 话</pattern><template><srai>杨 涛 电 话</srai> </template></category>
+  <category><pattern>杨 涛 电 话 *</pattern><template><srai>杨 涛 电 话</srai> </template></category>
+  <category><pattern>杨 涛 * 手 机</pattern><template><srai>杨 涛 电 话</srai> </template> </category>
+  <category><pattern>* 杨 涛 的 手 机</pattern><template><srai>杨 涛 电 话</srai> </template> </category>
+  <category><pattern>杨 涛 * 手 机 *</pattern><template><srai>杨 涛 电 话</srai> </template></category>
+  <category><pattern>* 杨 涛 手 机</pattern><template><srai>杨 涛 电 话</srai> </template></category>
+  <category><pattern>杨 涛 手 机 *</pattern><template><srai>杨 涛 电 话</srai> </template></category>
+  <category> 
+    <pattern>杨 涛 电 话</pattern>
+    <template> 杨涛：13641351073 </template>
+  </category> 
+
+  <category><pattern>冯 少 敏 * 电 话</pattern><template><srai>冯 少 敏 电 话</srai> </template> </category>
+  <category><pattern>* 冯 少 敏 的 电 话</pattern><template><srai>冯 少 敏 电 话</srai> </template> </category>
+  <category><pattern>冯 少 敏 * 电 话 *</pattern><template><srai>冯 少 敏 电 话</srai> </template></category>
+  <category><pattern>* 冯 少 敏 电 话</pattern><template><srai>冯 少 敏 电 话</srai> </template></category>
+  <category><pattern>冯 少 敏 电 话 *</pattern><template><srai>冯 少 敏 电 话</srai> </template></category>
+  <category><pattern>冯 少 敏 * 手 机</pattern><template><srai>冯 少 敏 电 话</srai> </template> </category>
+  <category><pattern>* 冯 少 敏 的 手 机</pattern><template><srai>冯 少 敏 电 话</srai> </template> </category>
+  <category><pattern>冯 少 敏 * 手 机 *</pattern><template><srai>冯 少 敏 电 话</srai> </template></category>
+  <category><pattern>* 冯 少 敏 手 机</pattern><template><srai>冯 少 敏 电 话</srai> </template></category>
+  <category><pattern>冯 少 敏 手 机 *</pattern><template><srai>冯 少 敏 电 话</srai> </template></category>
+  <category>
+    <pattern>冯 少 敏 电 话</pattern>
+    <template> 冯少敏：15110202919 </template>
+  </category>
+
+
+  <category><pattern>李 巧 红 * 电 话</pattern><template><srai>李 巧 红 电 话</srai> </template> </category>
+  <category><pattern>* 李 巧 红 的 电 话</pattern><template><srai>李 巧 红 电 话</srai> </template> </category>
+  <category><pattern>李 巧 红 * 电 话 *</pattern><template><srai>李 巧 红 电 话</srai> </template></category>
+  <category><pattern>* 李 巧 红 电 话</pattern><template><srai>李 巧 红 电 话</srai> </template></category>
+  <category><pattern>李 巧 红 电 话 *</pattern><template><srai>李 巧 红 电 话</srai> </template></category>
+  <category><pattern>李 巧 红 * 手 机</pattern><template><srai>李 巧 红 电 话</srai> </template> </category>
+  <category><pattern>* 李 巧 红 的 手 机</pattern><template><srai>李 巧 红 电 话</srai> </template> </category>
+  <category><pattern>李 巧 红 * 手 机 *</pattern><template><srai>李 巧 红 电 话</srai> </template></category>
+  <category><pattern>* 李 巧 红 手 机</pattern><template><srai>李 巧 红 电 话</srai> </template></category>
+  <category><pattern>李 巧 红 手 机 *</pattern><template><srai>李 巧 红 电 话</srai> </template></category>
+  <category>
+    <pattern>李 巧 红 电 话</pattern>
+    <template> 李巧红：18610356765 </template>
+  </category>
+
+  <category><pattern>王 林 * 电 话</pattern><template><srai>王 林 电 话</srai> </template> </category>
+  <category><pattern>* 王 林 的 电 话</pattern><template><srai>王 林 电 话</srai> </template> </category>
+  <category><pattern>王 林 * 电 话 *</pattern><template><srai>王 林 电 话</srai> </template></category>
+  <category><pattern>* 王 林 电 话</pattern><template><srai>王 林 电 话</srai> </template></category>
+  <category><pattern>王 林 电 话 *</pattern><template><srai>王 林 电 话</srai> </template></category>
+  <category><pattern>王 林 * 手 机</pattern><template><srai>王 林 电 话</srai> </template> </category>
+  <category><pattern>* 王 林 的 手 机</pattern><template><srai>王 林 电 话</srai> </template> </category>
+  <category><pattern>王 林 * 手 机 *</pattern><template><srai>王 林 电 话</srai> </template></category>
+  <category><pattern>* 王 林 手 机</pattern><template><srai>王 林 电 话</srai> </template></category>
+  <category><pattern>王 林 手 机 *</pattern><template><srai>王 林 电 话</srai> </template></category>
+<category>
+<pattern>王 林 电 话</pattern>
+<template> 王林：18610506366 </template>
+</category>
+
+  <category><pattern>季 向 远 * 电 话</pattern><template><srai>季 向 远 电 话</srai> </template> </category>
+  <category><pattern>* 季 向 远 的 电 话</pattern><template><srai>季 向 远 电 话</srai> </template> </category>
+  <category><pattern>季 向 远 * 电 话 *</pattern><template><srai>季 向 远 电 话</srai> </template></category>
+  <category><pattern>* 季 向 远 电 话</pattern><template><srai>季 向 远 电 话</srai> </template></category>
+  <category><pattern>季 向 远 电 话 *</pattern><template><srai>季 向 远 电 话</srai> </template></category>
+  <category><pattern>季 向 远 * 手 机</pattern><template><srai>季 向 远 电 话</srai> </template> </category>
+  <category><pattern>* 季 向 远 的 手 机</pattern><template><srai>季 向 远 电 话</srai> </template> </category>
+  <category><pattern>季 向 远 * 手 机 *</pattern><template><srai>季 向 远 电 话</srai> </template></category>
+  <category><pattern>* 季 向 远 手 机</pattern><template><srai>季 向 远 电 话</srai> </template></category>
+  <category><pattern>季 向 远 手 机 *</pattern><template><srai>季 向 远 电 话</srai> </template></category>
+  <category>
+  <pattern>季 向 远 电 话</pattern>
+  <template> 季向远：13521960263 </template>
+  </category>
+
+  <category><pattern>章 天 中 * 电 话</pattern><template><srai>章 天 中 电 话</srai> </template> </category>
+  <category><pattern>* 章 天 中 的 电 话</pattern><template><srai>章 天 中 电 话</srai> </template> </category>
+  <category><pattern>章 天 中 * 电 话 *</pattern><template><srai>章 天 中 电 话</srai> </template></category>
+  <category><pattern>* 章 天 中 电 话</pattern><template><srai>章 天 中 电 话</srai> </template></category>
+  <category><pattern>章 天 中 电 话 *</pattern><template><srai>章 天 中 电 话</srai> </template></category>
+  <category><pattern>章 天 中 * 手 机</pattern><template><srai>章 天 中 电 话机</srai> </template> </category>
+  <category><pattern>* 章 天 中 的 手 机</pattern><template><srai>章 天 中 电 话</srai> </template> </category>
+  <category><pattern>章 天 中 * 手 机 *</pattern><template><srai>章 天 中 电 话</srai> </template></category>
+  <category><pattern>* 章 天 中 手 机</pattern><template><srai>章 天 中 电 话</srai> </template></category>
+  <category><pattern>章 天 中 手 机 *</pattern><template><srai>章 天 中 电 话</srai> </template></category>
+  <category>
+    <pattern>章 天 中 电 话</pattern>
+    <template> 章 天 中：13911051380 </template>
+  </category>
+
+  <category><pattern>王 翼 冲 * 电 话</pattern><template><srai>王 翼 冲 电 话</srai> </template> </category>
+  <category><pattern>* 王 翼 冲 的 电 话</pattern><template><srai>王 翼 冲 电 话</srai> </template> </category>
+  <category><pattern>王 翼 冲 * 电 话 *</pattern><template><srai>王 翼 冲 电 话</srai> </template></category>
+  <category><pattern>* 王 翼 冲 电 话</pattern><template><srai>王 翼 冲 电 话</srai> </template></category>
+  <category><pattern>王 翼 冲 电 话 *</pattern><template><srai>王 翼 冲 电 话</srai> </template></category>
+  <category><pattern>王 翼 冲 * 手 机</pattern><template><srai>王 翼 冲 手 机</srai> </template> </category>
+  <category><pattern>* 王 翼 冲 的 手 机</pattern><template><srai>王 翼 冲 电 话</srai> </template> </category>
+  <category><pattern>王 翼 冲 * 手 机 *</pattern><template><srai>王 翼 冲 电 话</srai> </template></category>
+  <category><pattern>* 王 翼 冲 手 机</pattern><template><srai>王 翼 冲 电 话</srai> </template></category>
+  <category><pattern>王 翼 冲 手 机 *</pattern><template><srai>王 翼 冲 电 话</srai> </template></category>
+  <category>
+    <pattern>王 翼 冲 电 话</pattern>
+    <template> 王 翼 冲：13911436715 </template>
+  </category>
+
+    <category><pattern>陈 俊 * 电 话</pattern><template><srai>陈 俊 电 话</srai> </template> </category>
+  <category><pattern>* 陈 俊 的 电 话</pattern><template><srai>陈 俊 电 话</srai> </template> </category>
+  <category><pattern>陈 俊 * 电 话 *</pattern><template><srai>陈 俊 电 话</srai> </template></category>
+  <category><pattern>* 陈 俊 电 话</pattern><template><srai>陈 俊 电 话</srai> </template></category>
+  <category><pattern>陈 俊 电 话 *</pattern><template><srai>陈 俊 电 话</srai> </template></category>
+  <category><pattern>陈 俊 * 手 机</pattern><template><srai>陈 俊 电 话</srai> </template> </category>
+  <category><pattern>* 陈 俊 的 手 机</pattern><template><srai>陈 俊 电 话</srai> </template> </category>
+  <category><pattern>陈 俊 * 手 机 *</pattern><template><srai>陈 俊 电 话</srai> </template></category>
+  <category><pattern>* 陈 俊 手 机</pattern><template><srai>陈 俊 电 话</srai> </template></category>
+  <category><pattern>陈 俊 手 机 *</pattern><template><srai>陈 俊 电 话</srai> </template></category>
+  <category>
+    <pattern>陈 俊 电 话</pattern>
+    <template> 陈 俊：13401095801 </template>
+  </category>
+
+    <category><pattern>鲍 诗 瑶 * 电 话</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template> </category>
+  <category><pattern>* 鲍 诗 瑶 的 电 话</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template> </category>
+  <category><pattern>鲍 诗 瑶 * 电 话 *</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template></category>
+  <category><pattern>* 鲍 诗 瑶 电 话</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template></category>
+  <category><pattern>鲍 诗 瑶 电 话 *</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template></category>
+  <category><pattern>鲍 诗 瑶 * 手 机</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template> </category>
+  <category><pattern>* 鲍 诗 瑶 的 手 机</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template> </category>
+  <category><pattern>鲍 诗 瑶 * 手 机 *</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template></category>
+  <category><pattern>* 鲍 诗 瑶 手 机</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template></category>
+  <category><pattern>鲍 诗 瑶 手 机 *</pattern><template><srai>鲍 诗 瑶 电 话</srai> </template></category>
+  <category>
+    <pattern>鲍 诗 瑶 电 话</pattern>
+    <template> 鲍 诗 瑶：18611974720 </template>
+  </category>
+
+    <category><pattern>王 冲 * 电 话</pattern><template><srai>王 冲 电 话</srai> </template> </category>
+  <category><pattern>* 王 冲 的 电 话</pattern><template><srai>王 冲 电 话</srai> </template> </category>
+  <category><pattern>王 冲 * 电 话 *</pattern><template><srai>王 冲 电 话</srai> </template></category>
+  <category><pattern>* 王 冲 电 话</pattern><template><srai>王 冲 电 话</srai> </template></category>
+  <category><pattern>王 冲 电 话 *</pattern><template><srai>王 冲 电 话</srai> </template></category>
+  <category><pattern>王 冲 * 手 机</pattern><template><srai>王 冲 电 话</srai> </template> </category>
+  <category><pattern>* 王 冲 的 手 机</pattern><template><srai>王 冲 电 话</srai> </template> </category>
+  <category><pattern>王 冲 * 手 机 *</pattern><template><srai>王 冲 电 话</srai> </template></category>
+  <category><pattern>* 王 冲 手 机</pattern><template><srai>王 冲 电 话</srai> </template></category>
+  <category><pattern>王 冲 手 机 *</pattern><template><srai>王 冲 电 话</srai> </template></category>
+  <category>
+    <pattern>王 冲 电 话</pattern>
+    <template> 王 冲：15201690614 </template>
+  </category>
+
+    <category><pattern>简 方 毅 * 电 话</pattern><template><srai>简 方 毅 电 话</srai> </template> </category>
+  <category><pattern>* 简 方 毅 的 电 话</pattern><template><srai>简 方 毅 电 话</srai> </template> </category>
+  <category><pattern>简 方 毅 * 电 话 *</pattern><template><srai>简 方 毅 电 话</srai> </template></category>
+  <category><pattern>* 简 方 毅 电 话</pattern><template><srai>简 方 毅 电 话</srai> </template></category>
+  <category><pattern>简 方 毅 电 话 *</pattern><template><srai>简 方 毅 电 话</srai> </template></category>
+  <category><pattern>简 方 毅 * 手 机</pattern><template><srai>简 方 毅 电 话</srai> </template> </category>
+  <category><pattern>* 简 方 毅 的 手 机</pattern><template><srai>简 方 毅 电 话</srai> </template> </category>
+  <category><pattern>简 方 毅 * 手 机 *</pattern><template><srai>简 方 毅 电 话</srai> </template></category>
+  <category><pattern>* 简 方 毅 手 机</pattern><template><srai>简 方 毅 电 话</srai> </template></category>
+  <category><pattern>简 方 毅 手 机 *</pattern><template><srai>简 方 毅 电 话</srai> </template></category>
+  <category>
+    <pattern>简 方 毅 电 话</pattern>
+    <template> 简 方 毅：13501132799</template>
+  </category>
+
+    <category><pattern>夏 洪 玉 * 电 话</pattern><template><srai>夏 洪 玉 电 话</srai> </template> </category>
+  <category><pattern>* 夏 洪 玉 的 电 话</pattern><template><srai>夏 洪 玉 电 话</srai> </template> </category>
+  <category><pattern>夏 洪 玉 * 电 话 *</pattern><template><srai>夏 洪 玉 电 话</srai> </template></category>
+  <category><pattern>* 夏 洪 玉 电 话</pattern><template><srai>夏 洪 玉 电 话</srai> </template></category>
+  <category><pattern>夏 洪 玉 电 话 *</pattern><template><srai>夏 洪 玉 电 话</srai> </template></category>
+  <category><pattern>夏 洪 玉 * 手 机</pattern><template><srai>夏 洪 玉 电 话</srai> </template> </category>
+  <category><pattern>* 夏 洪 玉 的 手 机</pattern><template><srai>夏 洪 玉 电 话</srai> </template> </category>
+  <category><pattern>夏 洪 玉 * 手 机 *</pattern><template><srai>夏 洪 玉 电 话</srai> </template></category>
+  <category><pattern>* 夏 洪 玉 手 机</pattern><template><srai>夏 洪 玉 电 话</srai> </template></category>
+  <category><pattern>夏 洪 玉 手 机 *</pattern><template><srai>夏 洪 玉 电 话</srai> </template></category>
+  <category>
+    <pattern>夏 洪 玉 电 话</pattern>
+    <template> 夏 洪 玉：13501075890</template>
+  </category>
+
+      <category><pattern>聂 洪 星 * 电 话</pattern><template><srai>聂 洪 星 电 话</srai> </template> </category>
+  <category><pattern>* 聂 洪 星 的 电 话</pattern><template><srai>聂 洪 星 电 话</srai> </template> </category>
+  <category><pattern>聂 洪 星 * 电 话 *</pattern><template><srai>聂 洪 星 电 话</srai> </template></category>
+  <category><pattern>* 聂 洪 星 电 话</pattern><template><srai>聂 洪 星 电 话</srai> </template></category>
+  <category><pattern>聂 洪 星 电 话 *</pattern><template><srai>聂 洪 星 电 话</srai> </template></category>
+  <category><pattern>聂 洪 星 * 手 机</pattern><template><srai>聂 洪 星 电 话</srai> </template> </category>
+  <category><pattern>* 聂 洪 星 的 手 机</pattern><template><srai>聂 洪 星 电 话</srai> </template> </category>
+  <category><pattern>聂 洪 星 * 手 机 *</pattern><template><srai>聂 洪 星 电 话</srai> </template></category>
+  <category><pattern>* 聂 洪 星 手 机</pattern><template><srai>聂 洪 星 电 话</srai> </template></category>
+  <category><pattern>聂 洪 星 手 机 *</pattern><template><srai>聂 洪 星 电 话</srai> </template></category>
+  <category>
+    <pattern>聂 洪 星 电 话</pattern>
+    <template> 聂 洪 星：13701397640</template>
+  </category>
+
+    <category><pattern>董 晓 航 * 电 话</pattern><template><srai>董 晓 航 电 话</srai> </template> </category>
+  <category><pattern>* 董 晓 航 的 电 话</pattern><template><srai>董 晓 航 电 话</srai> </template> </category>
+  <category><pattern>董 晓 航 * 电 话 *</pattern><template><srai>董 晓 航 电 话</srai> </template></category>
+  <category><pattern>* 董 晓 航 电 话</pattern><template><srai>董 晓 航 电 话</srai> </template></category>
+  <category><pattern>董 晓 航 电 话 *</pattern><template><srai>董 晓 航 电 话</srai> </template></category>
+  <category><pattern>董 晓 航 * 手 机</pattern><template><srai>董 晓 航 手 机</srai> </template> </category>
+  <category><pattern>* 董 晓 航 的 手 机</pattern><template><srai>董 晓 航 手 机</srai> </template> </category>
+  <category><pattern>董 晓 航 * 手 机 *</pattern><template><srai>董 晓 航 手 机</srai> </template></category>
+  <category><pattern>* 董 晓 航 手 机</pattern><template><srai>董 晓 航 手 机</srai> </template></category>
+  <category><pattern>董 晓 航 手 机 *</pattern><template><srai>董 晓 航 手 机</srai> </template></category>
+  <category>
+    <pattern>董 晓 航 电 话</pattern>
+    <template> 董 晓 航：18518116270</template>
+  </category>
+
+ <category><pattern>万 志 荣 * 电 话</pattern><template><srai>万 志 荣 电 话</srai> </template> </category>
+  <category><pattern>* 万 志 荣 的 电 话</pattern><template><srai>万 志 荣 电 话</srai> </template> </category>
+  <category><pattern>万 志 荣 * 电 话 *</pattern><template><srai>万 志 荣 电 话</srai> </template></category>
+  <category><pattern>* 万 志 荣 电 话</pattern><template><srai>万 志 荣 电 话</srai> </template></category>
+  <category><pattern>万 志 荣 电 话 *</pattern><template><srai>万 志 荣 电 话</srai> </template></category>
+  <category><pattern>万 志 荣 * 手 机</pattern><template><srai>万 志 荣 电 话</srai> </template> </category>
+  <category><pattern>* 万 志 荣 的 手 机</pattern><template><srai>万 志 荣 电 话</srai> </template> </category>
+  <category><pattern>万 志 荣 * 手 机 *</pattern><template><srai>万 志 荣 电 话</srai> </template></category>
+  <category><pattern>* 万 志 荣 手 机</pattern><template><srai>万 志 荣 电 话</srai> </template></category>
+  <category><pattern>万 志 荣 手 机 *</pattern><template><srai>万 志 荣 电 话</srai> </template></category>
+  <category>
+    <pattern>万 志 荣 电 话</pattern>
+    <template> 万 志 荣： 13520705275
+ </template>
+  </category>
+     <category><pattern>李 颖 * 电 话</pattern><template><srai>李 颖 电 话</srai> </template> </category>
+  <category><pattern>* 李 颖 的 电 话</pattern><template><srai>李 颖 电 话</srai> </template> </category>
+  <category><pattern>李 颖 * 电 话 *</pattern><template><srai>李 颖 电 话</srai> </template></category>
+  <category><pattern>* 李 颖 电 话</pattern><template><srai>李 颖 电 话</srai> </template></category>
+  <category><pattern>李 颖 电 话 *</pattern><template><srai>李 颖 电 话</srai> </template></category>
+  <category><pattern>李 颖 * 手 机</pattern><template><srai>李 颖 电 话</srai> </template> </category>
+  <category><pattern>* 李 颖 的 手 机</pattern><template><srai>李 颖 电 话</srai> </template> </category>
+  <category><pattern>李 颖 * 手 机 *</pattern><template><srai>李 颖 电 话</srai> </template></category>
+  <category><pattern>* 李 颖 手 机</pattern><template><srai>李 颖 电 话</srai> </template></category>
+  <category><pattern>李 颖 手 机 *</pattern><template><srai>李 颖 电 话</srai> </template></category>
+  <category>
+    <pattern>李 颖 电 话</pattern>
+    <template> 李 颖： 13910669550
+ </template>
+  </category>
+     <category><pattern>赵 丞 * 电 话</pattern><template><srai>赵 丞 电 话</srai> </template> </category>
+  <category><pattern>* 赵 丞 的 电 话</pattern><template><srai>赵 丞 电 话</srai> </template> </category>
+  <category><pattern>赵 丞 * 电 话 *</pattern><template><srai>赵 丞 电 话</srai> </template></category>
+  <category><pattern>* 赵 丞 电 话</pattern><template><srai>赵 丞 电 话</srai> </template></category>
+  <category><pattern>赵 丞 电 话 *</pattern><template><srai>赵 丞 电 话</srai> </template></category>
+  <category><pattern>赵 丞 * 手 机</pattern><template><srai>赵 丞 电 话</srai> </template> </category>
+  <category><pattern>* 赵 丞 的 手 机</pattern><template><srai>赵 丞 电 话</srai> </template> </category>
+  <category><pattern>赵 丞 * 手 机 *</pattern><template><srai>赵 丞 电 话</srai> </template></category>
+  <category><pattern>* 赵 丞 手 机</pattern><template><srai>赵 丞 电 话</srai> </template></category>
+  <category><pattern>赵 丞 手 机 *</pattern><template><srai>赵 丞 电 话</srai> </template></category>
+  <category>
+    <pattern>赵 丞 电 话</pattern>
+    <template> 赵 丞： 18610010016
+ </template>
+  </category>
+     <category><pattern>刘 心 愉 * 电 话</pattern><template><srai>刘 心 愉 电 话</srai> </template> </category>
+  <category><pattern>* 刘 心 愉 的 电 话</pattern><template><srai>刘 心 愉 电 话</srai> </template> </category>
+  <category><pattern>刘 心 愉 * 电 话 *</pattern><template><srai>刘 心 愉 电 话</srai> </template></category>
+  <category><pattern>* 刘 心 愉 电 话</pattern><template><srai>刘 心 愉 电 话</srai> </template></category>
+  <category><pattern>刘 心 愉 电 话 *</pattern><template><srai>刘 心 愉 电 话</srai> </template></category>
+  <category><pattern>刘 心 愉 * 手 机</pattern><template><srai>刘 心 愉 电 话</srai> </template> </category>
+  <category><pattern>* 刘 心 愉 的 手 机</pattern><template><srai>刘 心 愉 电 话</srai> </template> </category>
+  <category><pattern>刘 心 愉 * 手 机 *</pattern><template><srai>刘 心 愉 电 话</srai> </template></category>
+  <category><pattern>* 刘 心 愉 手 机</pattern><template><srai>刘 心 愉 电 话</srai> </template></category>
+  <category><pattern>刘 心 愉 手 机 *</pattern><template><srai>刘 心 愉 电 话</srai> </template></category>
+  <category>
+    <pattern>刘 心 愉 电 话</pattern>
+    <template> 刘 心 愉： 15910659517
+ </template>
+  </category>
+     <category><pattern>黄 凌 峰 * 电 话</pattern><template><srai>黄 凌 峰 电 话</srai> </template> </category>
+  <category><pattern>* 黄 凌 峰 的 电 话</pattern><template><srai>黄 凌 峰 电 话</srai> </template> </category>
+  <category><pattern>黄 凌 峰 * 电 话 *</pattern><template><srai>黄 凌 峰 电 话</srai> </template></category>
+  <category><pattern>* 黄 凌 峰 电 话</pattern><template><srai>黄 凌 峰 电 话</srai> </template></category>
+  <category><pattern>黄 凌 峰 电 话 *</pattern><template><srai>黄 凌 峰 电 话</srai> </template></category>
+  <category><pattern>黄 凌 峰 * 手 机</pattern><template><srai>黄 凌 峰 电 话</srai> </template> </category>
+  <category><pattern>* 黄 凌 峰 的 手 机</pattern><template><srai>黄 凌 峰 电 话</srai> </template> </category>
+  <category><pattern>黄 凌 峰 * 手 机 *</pattern><template><srai>黄 凌 峰 电 话</srai> </template></category>
+  <category><pattern>* 黄 凌 峰 手 机</pattern><template><srai>黄 凌 峰 电 话</srai> </template></category>
+  <category><pattern>黄 凌 峰 手 机 *</pattern><template><srai>黄 凌 峰 电 话</srai> </template></category>
+  <category>
+    <pattern>黄 凌 峰 电 话</pattern>
+    <template> 黄 凌 峰： 13681110001
+ </template>
+  </category>
+     <category><pattern>陈 永 辉 * 电 话</pattern><template><srai>陈 永 辉 电 话</srai> </template> </category>
+  <category><pattern>* 陈 永 辉 的 电 话</pattern><template><srai>陈 永 辉 电 话</srai> </template> </category>
+  <category><pattern>陈 永 辉 * 电 话 *</pattern><template><srai>陈 永 辉 电 话</srai> </template></category>
+  <category><pattern>* 陈 永 辉 电 话</pattern><template><srai>陈 永 辉 电 话</srai> </template></category>
+  <category><pattern>陈 永 辉 电 话 *</pattern><template><srai>陈 永 辉 电 话</srai> </template></category>
+  <category><pattern>陈 永 辉 * 手 机</pattern><template><srai>陈 永 辉 电 话</srai> </template> </category>
+  <category><pattern>* 陈 永 辉 的 手 机</pattern><template><srai>陈 永 辉 电 话</srai> </template> </category>
+  <category><pattern>陈 永 辉 * 手 机 *</pattern><template><srai>陈 永 辉 电 话</srai> </template></category>
+  <category><pattern>* 陈 永 辉 手 机</pattern><template><srai>陈 永 辉 电 话</srai> </template></category>
+  <category><pattern>陈 永 辉 手 机 *</pattern><template><srai>陈 永 辉 电 话</srai> </template></category>
+  <category>
+    <pattern>陈 永 辉 电 话</pattern>
+    <template> 陈 永 辉： 18611299550
+ </template>
+  </category>
+     <category><pattern>任 杰 * 电 话</pattern><template><srai>任 杰 电 话</srai> </template> </category>
+  <category><pattern>* 任 杰 的 电 话</pattern><template><srai>任 杰 电 话</srai> </template> </category>
+  <category><pattern>任 杰 * 电 话 *</pattern><template><srai>任 杰 电 话</srai> </template></category>
+  <category><pattern>* 任 杰 电 话</pattern><template><srai>任 杰 电 话</srai> </template></category>
+  <category><pattern>任 杰 电 话 *</pattern><template><srai>任 杰 电 话</srai> </template></category>
+  <category><pattern>任 杰 * 手 机</pattern><template><srai>任 杰 电 话</srai> </template> </category>
+  <category><pattern>* 任 杰 的 手 机</pattern><template><srai>任 杰 电 话</srai> </template> </category>
+  <category><pattern>任 杰 * 手 机 *</pattern><template><srai>任 杰 电 话</srai> </template></category>
+  <category><pattern>* 任 杰 手 机</pattern><template><srai>任 杰 电 话</srai> </template></category>
+  <category><pattern>任 杰 手 机 *</pattern><template><srai>任 杰 电 话</srai> </template></category>
+  <category>
+    <pattern>任 杰 电 话</pattern>
+    <template> 任 杰： 18612142881
+ </template>
+  </category>
+     <category><pattern>董 慧 儒 * 电 话</pattern><template><srai>董 慧 儒 电 话</srai> </template> </category>
+  <category><pattern>* 董 慧 儒 的 电 话</pattern><template><srai>董 慧 儒 电 话</srai> </template> </category>
+  <category><pattern>董 慧 儒 * 电 话 *</pattern><template><srai>董 慧 儒 电 话</srai> </template></category>
+  <category><pattern>* 董 慧 儒 电 话</pattern><template><srai>董 慧 儒 电 话</srai> </template></category>
+  <category><pattern>董 慧 儒 电 话 *</pattern><template><srai>董 慧 儒 电 话</srai> </template></category>
+  <category><pattern>董 慧 儒 * 手 机</pattern><template><srai>董 慧 儒 电 话</srai> </template> </category>
+  <category><pattern>* 董 慧 儒 的 手 机</pattern><template><srai>董 慧 儒 电 话</srai> </template> </category>
+  <category><pattern>董 慧 儒 * 手 机 *</pattern><template><srai>董 慧 儒 电 话</srai> </template></category>
+  <category><pattern>* 董 慧 儒 手 机</pattern><template><srai>董 慧 儒 电 话</srai> </template></category>
+  <category><pattern>董 慧 儒 手 机 *</pattern><template><srai>董 慧 儒 电 话</srai> </template></category>
+  <category>
+    <pattern>董 慧 儒 电 话</pattern>
+    <template> 董 慧 儒： 15210003904
+ </template>
+  </category>
+     <category><pattern>杨 扬 * 电 话</pattern><template><srai>杨 扬 电 话</srai> </template> </category>
+  <category><pattern>* 杨 扬 的 电 话</pattern><template><srai>杨 扬 电 话</srai> </template> </category>
+  <category><pattern>杨 扬 * 电 话 *</pattern><template><srai>杨 扬 电 话</srai> </template></category>
+  <category><pattern>* 杨 扬 电 话</pattern><template><srai>杨 扬 电 话</srai> </template></category>
+  <category><pattern>杨 扬 电 话 *</pattern><template><srai>杨 扬 电 话</srai> </template></category>
+  <category><pattern>杨 扬 * 手 机</pattern><template><srai>杨 扬 电 话</srai> </template> </category>
+  <category><pattern>* 杨 扬 的 手 机</pattern><template><srai>杨 扬 电 话</srai> </template> </category>
+  <category><pattern>杨 扬 * 手 机 *</pattern><template><srai>杨 扬 电 话</srai> </template></category>
+  <category><pattern>* 杨 扬 手 机</pattern><template><srai>杨 扬 电 话</srai> </template></category>
+  <category><pattern>杨 扬 手 机 *</pattern><template><srai>杨 扬 电 话</srai> </template></category>
+  <category>
+    <pattern>杨 扬 电 话</pattern>
+    <template> 杨 扬： 18810454970
+ </template>
+  </category>
+     <category><pattern>岳 凌 志 * 电 话</pattern><template><srai>岳 凌 志 电 话</srai> </template> </category>
+  <category><pattern>* 岳 凌 志 的 电 话</pattern><template><srai>岳 凌 志 电 话</srai> </template> </category>
+  <category><pattern>岳 凌 志 * 电 话 *</pattern><template><srai>岳 凌 志 电 话</srai> </template></category>
+  <category><pattern>* 岳 凌 志 电 话</pattern><template><srai>岳 凌 志 电 话</srai> </template></category>
+  <category><pattern>岳 凌 志 电 话 *</pattern><template><srai>岳 凌 志 电 话</srai> </template></category>
+  <category><pattern>岳 凌 志 * 手 机</pattern><template><srai>岳 凌 志 电 话</srai> </template> </category>
+  <category><pattern>* 岳 凌 志 的 手 机</pattern><template><srai>岳 凌 志 电 话</srai> </template> </category>
+  <category><pattern>岳 凌 志 * 手 机 *</pattern><template><srai>岳 凌 志 电 话</srai> </template></category>
+  <category><pattern>* 岳 凌 志 手 机</pattern><template><srai>岳 凌 志 电 话</srai> </template></category>
+  <category><pattern>岳 凌 志 手 机 *</pattern><template><srai>岳 凌 志 电 话</srai> </template></category>
+  <category>
+    <pattern>岳 凌 志 电 话</pattern>
+    <template> 岳 凌 志： 18037810331
+ </template>
+  </category>
+     <category><pattern>张 小 蒙 * 电 话</pattern><template><srai>张 小 蒙 电 话</srai> </template> </category>
+  <category><pattern>* 张 小 蒙 的 电 话</pattern><template><srai>张 小 蒙 电 话</srai> </template> </category>
+  <category><pattern>张 小 蒙 * 电 话 *</pattern><template><srai>张 小 蒙 电 话</srai> </template></category>
+  <category><pattern>* 张 小 蒙 电 话</pattern><template><srai>张 小 蒙 电 话</srai> </template></category>
+  <category><pattern>张 小 蒙 电 话 *</pattern><template><srai>张 小 蒙 电 话</srai> </template></category>
+  <category><pattern>张 小 蒙 * 手 机</pattern><template><srai>张 小 蒙 电 话</srai> </template> </category>
+  <category><pattern>* 张 小 蒙 的 手 机</pattern><template><srai>张 小 蒙 电 话</srai> </template> </category>
+  <category><pattern>张 小 蒙 * 手 机 *</pattern><template><srai>张 小 蒙 电 话</srai> </template></category>
+  <category><pattern>* 张 小 蒙 手 机</pattern><template><srai>张 小 蒙 电 话</srai> </template></category>
+  <category><pattern>张 小 蒙 手 机 *</pattern><template><srai>张 小 蒙 电 话</srai> </template></category>
+  <category>
+    <pattern>张 小 蒙 电 话</pattern>
+    <template> 张 小 蒙： 13716756134
+ </template>
+  </category>
+     <category><pattern>田 艳 艳 * 电 话</pattern><template><srai>田 艳 艳 电 话</srai> </template> </category>
+  <category><pattern>* 田 艳 艳 的 电 话</pattern><template><srai>田 艳 艳 电 话</srai> </template> </category>
+  <category><pattern>田 艳 艳 * 电 话 *</pattern><template><srai>田 艳 艳 电 话</srai> </template></category>
+  <category><pattern>* 田 艳 艳 电 话</pattern><template><srai>田 艳 艳 电 话</srai> </template></category>
+  <category><pattern>田 艳 艳 电 话 *</pattern><template><srai>田 艳 艳 电 话</srai> </template></category>
+  <category><pattern>田 艳 艳 * 手 机</pattern><template><srai>田 艳 艳 电 话</srai> </template> </category>
+  <category><pattern>* 田 艳 艳 的 手 机</pattern><template><srai>田 艳 艳 电 话</srai> </template> </category>
+  <category><pattern>田 艳 艳 * 手 机 *</pattern><template><srai>田 艳 艳 电 话</srai> </template></category>
+  <category><pattern>* 田 艳 艳 手 机</pattern><template><srai>田 艳 艳 电 话</srai> </template></category>
+  <category><pattern>田 艳 艳 手 机 *</pattern><template><srai>田 艳 艳 电 话</srai> </template></category>
+  <category>
+    <pattern>田 艳 艳 电 话</pattern>
+    <template> 田 艳 艳： 15011570890
+ </template>
+  </category>
+     <category><pattern>蒋 玉 鹏 * 电 话</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template> </category>
+  <category><pattern>* 蒋 玉 鹏 的 电 话</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template> </category>
+  <category><pattern>蒋 玉 鹏 * 电 话 *</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template></category>
+  <category><pattern>* 蒋 玉 鹏 电 话</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template></category>
+  <category><pattern>蒋 玉 鹏 电 话 *</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template></category>
+  <category><pattern>蒋 玉 鹏 * 手 机</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template> </category>
+  <category><pattern>* 蒋 玉 鹏 的 手 机</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template> </category>
+  <category><pattern>蒋 玉 鹏 * 手 机 *</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template></category>
+  <category><pattern>* 蒋 玉 鹏 手 机</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template></category>
+  <category><pattern>蒋 玉 鹏 手 机 *</pattern><template><srai>蒋 玉 鹏 电 话</srai> </template></category>
+  <category>
+    <pattern>蒋 玉 鹏 电 话</pattern>
+    <template> 蒋 玉 鹏： 18810972128 </template>
+  </category>
+
+
+
+  <category>
+    <pattern>你 是 傻 逼</pattern>
+    <template>
+      <random>
+        <li>傻逼说谁？</li>
+        <li>你才是傻逼，你特么全家都是傻逼！！！</li>
+        <li>唉，傻逼何苦为难傻逼...</li>
+        <li>呵呵，五十步笑百步~</li>
+      </random>
+    </template>
+  </category>
+</aiml>
