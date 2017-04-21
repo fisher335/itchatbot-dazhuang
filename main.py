@@ -77,13 +77,13 @@ def group_join_note(msg):
     logging.warning(msg['Content'])
     logging.warning(msg['Text'])
     if u'邀请' in msg['Content'] or u'invited' in msg['Content']:
-       str = msg['Content'];
-       pos_start = str.find('"')
-       pos_end = str.find('"',pos_start+1)
-       inviter = str[pos_start+1:pos_end]
-       rpos_start = str.rfind('"')
-       rpos_end = str.rfind('"',0, rpos_start)
-       invitee = str[(rpos_end+1) : rpos_start]
+       str_content = msg['Content'];
+       pos_start = str_content.find('"')
+       pos_end = str_content.find('"',pos_start+1)
+       inviter = str_content[pos_start+1:pos_end]
+       rpos_start = str_content.rfind('"')
+       rpos_end = str_content.rfind('"',0, rpos_start)
+       invitee = str_content[(rpos_end+1) : rpos_start]
        itchat.send_msg(u"@%s 欢迎来到本群[微笑]，感谢%s邀请。" % (invitee,inviter), msg['FromUserName'])
 
 
