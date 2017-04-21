@@ -35,13 +35,13 @@ def atta_reply(msg):
             u'已下载到本地')  # download function is: msg['Text'](msg['FileName'])
 
 
-@itchat.msg_register(['Map', 'Card',  'Sharing'])
+@itchat.msg_register(['Map', 'Card', 'Sharing'])
 def mm_reply(msg):
     if msg['Type'] == 'Map':
         return u'收到位置分享'
     elif msg['Type'] == 'Sharing':
         return u'收到分享' + msg['Text']
-    # elif msg['Type'] == 'Note':
+        # elif msg['Type'] == 'Note':
         return u'收到：' + msg['Text']
     elif msg['Type'] == 'Card':
         return u'收到好友信息：' + msg['Text']['Alias']
@@ -71,20 +71,21 @@ def group_reply(msg):
                 msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
 
 
+# TODO:增加群管理功能，自动加人 踢人
 @itchat.msg_register('Note', isGroupChat=True)
 def group_join_note(msg):
     print(msg)
     logging.warning(msg['Content'])
     logging.warning(msg['Text'])
     if u'邀请' in msg['Content'] or u'invited' in msg['Content']:
-       str_content = msg['Content'];
-       pos_start = str_content.find('"')
-       pos_end = str_content.find('"',pos_start+1)
-       inviter = str_content[pos_start+1:pos_end]
-       rpos_start = str_content.rfind('"')
-       rpos_end = str_content.rfind('"',0, rpos_start)
-       invitee = str_content[(rpos_end+1) : rpos_start]
-       itchat.send_msg(u"@%s 欢迎来到本群[微笑]，感谢%s邀请。" % (invitee,inviter), msg['FromUserName'])
+        str_content = msg['Content'];
+        pos_start = str_content.find('"')
+        pos_end = str_content.find('"', pos_start + 1)
+        inviter = str_content[pos_start + 1:pos_end]
+        rpos_start = str_content.rfind('"')
+        rpos_end = str_content.rfind('"', 0, rpos_start)
+        invitee = str_content[(rpos_end + 1): rpos_start]
+        itchat.send_msg(u"@%s 欢迎来到本群[微笑]，感谢%s邀请。" % (invitee, inviter), msg['FromUserName'])
 
 
 itchat.auto_login(True, enableCmdQR=False)
