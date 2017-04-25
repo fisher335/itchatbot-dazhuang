@@ -12,6 +12,7 @@ from datetime import datetime
 def text_reply(msg):
     global ms
     ms= msg.fromUserName
+    print ms
     if u'查看日志' in msg['Text']:
         itchat.send_file(fileDir='logs/log.log', toUserName=msg['FromUserName'])
         # itchat.send(u'测试内容测试内容', toUserName=msg['FromUserName'])
@@ -31,9 +32,10 @@ def text_reply(msg):
     elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
         itchat.send_msg(get_response(msg['Text']),toUserName=msg['FromUserName'])
     else:
-        ms = msg.fromUserName
+        ms = msg['FromUserName']
+        ms_xiaobing =  itchat.get_mps()[0]['UserName']
         # return get_response(msg['Text']) or u'收到：' + msg['Text']
-        itchat.send_msg(msg['Text'],'@99e92e57f8323524aee348c250847dae')
+        itchat.send_msg(msg['Text'],ms_xiaobing)
 
 
 @itchat.msg_register(['Picture', 'Recording', 'Attachment', 'Video'])
@@ -45,6 +47,7 @@ def atta_reply(msg):
 
 @itchat.msg_register(['Map', 'Card', 'Sharing'])
 def mm_reply(msg):
+
     if msg['Type'] == 'Map':
         return u'收到位置分享'
     elif msg['Type'] == 'Sharing':
@@ -57,6 +60,7 @@ def mm_reply(msg):
 
 @itchat.msg_register('Text', isGroupChat=True)
 def group_reply(msg):
+    global ms
     if msg['isAt']:
         a = msg['Text']
         # print a
@@ -73,17 +77,25 @@ def group_reply(msg):
         elif u'获取图片' in msg['Text']:
             # there should be a picture
             itchat.send('@img@applaud.gif', msg['FromUserName'])
+        elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
+            itchat.send_msg(get_response(msg_rel),toUserName=msg['FromUserName'])
         else:
+            print msg['Text'],msg['FromUserName']
+            ms = msg['FromUserName']
+            ms_xiaobing =  itchat.get_mps()[0]['UserName']
+            itchat.send_msg(msg_rel,ms_xiaobing)
             # print msg_rel
-            itchat.send(u'@%s\u2005 %s' % (
-                msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
+            # itchat.send(u'@%s\u2005 %s' % (
+            #     msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
 
 
 #公众号微软小冰的回复转发
 @itchat.msg_register('Text',isMpChat=True)
 def group_reply(msg):
-    itchat.send_msg(msg.text,ms)
-    logging.warning(msg.text+'from xiaobing')
+    print msg['Text'],msg['FromUserName']
+
+    itchat.send_msg(msg['Text'],ms)
+    logging.warning(msg['Text']+'from xiaobing')
 
 
 
@@ -94,7 +106,7 @@ def group_join_note(msg):
     logging.warning(msg['Content'])
     logging.warning(msg['Text'])
     if u'邀请' in msg['Content'] or u'invited' in msg['Content']:
-        str_content = msg['Content'];
+        str_content = msg['Content']
         pos_start = str_content.find('"')
         pos_end = str_content.find('"', pos_start + 1)
         inviter = str_content[pos_start + 1:pos_end]
