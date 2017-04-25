@@ -6,8 +6,12 @@ import logging
 from datetime import datetime
 
 
+
 @itchat.msg_register('Text')
+
 def text_reply(msg):
+    global ms
+    ms= msg.fromUserName
     if u'查看日志' in msg['Text']:
         itchat.send_file(fileDir='logs/log.log', toUserName=msg['FromUserName'])
         # itchat.send(u'测试内容测试内容', toUserName=msg['FromUserName'])
@@ -24,8 +28,12 @@ def text_reply(msg):
         itchat.send_file(fileDir='static/hero.xls',
                          toUserName=msg['FromUserName'])
     # # itchat.send('@img@applaud.gif', msg['FromUserName'])  # there should be a picture
+    elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
+        itchat.send_msg(get_response(msg['Text']),toUserName=msg['FromUserName'])
     else:
-        return get_response(msg['Text']) or u'收到：' + msg['Text']
+        ms = msg.fromUserName
+        # return get_response(msg['Text']) or u'收到：' + msg['Text']
+        itchat.send_msg(msg['Text'],'@99e92e57f8323524aee348c250847dae')
 
 
 @itchat.msg_register(['Picture', 'Recording', 'Attachment', 'Video'])
@@ -69,6 +77,14 @@ def group_reply(msg):
             # print msg_rel
             itchat.send(u'@%s\u2005 %s' % (
                 msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
+
+
+#公众号微软小冰的回复转发
+@itchat.msg_register('Text',isMpChat=True)
+def group_reply(msg):
+    itchat.send_msg(msg.text,ms)
+    logging.warning(msg.text+'from xiaobing')
+
 
 
 # TODO:增加群管理功能，自动加人 踢人
