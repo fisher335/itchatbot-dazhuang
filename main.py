@@ -6,12 +6,10 @@ import logging
 from datetime import datetime
 
 
-
 @itchat.msg_register('Text')
-
 def text_reply(msg):
     global ms
-    ms= msg.fromUserName
+    ms = msg.fromUserName
     print ms
     if u'查看日志' in msg['Text']:
         itchat.send_file(fileDir='logs/log.log', toUserName=msg['FromUserName'])
@@ -30,12 +28,12 @@ def text_reply(msg):
                          toUserName=msg['FromUserName'])
     # # itchat.send('@img@applaud.gif', msg['FromUserName'])  # there should be a picture
     elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
-        itchat.send_msg(get_response(msg['Text']),toUserName=msg['FromUserName'])
+        itchat.send_msg(get_response(msg['Text']), toUserName=msg['FromUserName'])
     else:
         ms = msg['FromUserName']
-        ms_xiaobing =  itchat.get_mps()[0]['UserName']
+        ms_xiaobing = itchat.get_mps()[0]['UserName']
         # return get_response(msg['Text']) or u'收到：' + msg['Text']
-        itchat.send_msg(msg['Text'],ms_xiaobing)
+        itchat.send_msg(msg['Text'], ms_xiaobing)
 
 
 @itchat.msg_register(['Picture', 'Recording', 'Attachment', 'Video'])
@@ -47,7 +45,6 @@ def atta_reply(msg):
 
 @itchat.msg_register(['Map', 'Card', 'Sharing'])
 def mm_reply(msg):
-
     if msg['Type'] == 'Map':
         return u'收到位置分享'
     elif msg['Type'] == 'Sharing':
@@ -78,25 +75,24 @@ def group_reply(msg):
             # there should be a picture
             itchat.send('@img@applaud.gif', msg['FromUserName'])
         elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
-            itchat.send_msg(get_response(msg_rel),toUserName=msg['FromUserName'])
+            itchat.send_msg(get_response(msg_rel), toUserName=msg['FromUserName'])
         else:
-            print msg['Text'],msg['FromUserName']
+            print msg['Text'], msg['FromUserName']
             ms = msg['FromUserName']
-            ms_xiaobing =  itchat.get_mps()[0]['UserName']
-            itchat.send_msg(msg_rel,ms_xiaobing)
+            ms_xiaobing = itchat.get_mps()[0]['UserName']
+            itchat.send_msg(msg_rel, ms_xiaobing)
             # print msg_rel
             # itchat.send(u'@%s\u2005 %s' % (
             #     msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
 
 
-#公众号微软小冰的回复转发
-@itchat.msg_register('Text',isMpChat=True)
+# 公众号微软小冰的回复转发
+@itchat.msg_register('Text', isMpChat=True)
 def group_reply(msg):
-    print msg['Text'],msg['FromUserName']
+    print msg['Text'], msg['FromUserName']
 
-    itchat.send_msg(msg['Text'],ms)
-    logging.warning(msg['Text']+'from xiaobing')
-
+    itchat.send_msg(msg['Text'], ms)
+    logging.warning(msg['Text'] + 'from xiaobing')
 
 
 # TODO:增加群管理功能，自动加人 踢人
