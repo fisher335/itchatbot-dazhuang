@@ -117,13 +117,15 @@ def group_join_note(msg):
 
 
 itchat.auto_login(True, enableCmdQR=False)
-itchat.run(blockThread=False)
-# 采用定时给文件助手发送消息的机制保证网页微信不退出，刷新时间为一小时
-login_info = 'itchatbot has been login, time:' + \
-             datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
-itchat.send(login_info, toUserName='filehelper')
-while True:
-    time.sleep(60 * 60)
-    refresh_info = 'itchatbot has been refreshed, time:' + \
-                   datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
-    itchat.send(refresh_info, toUserName='filehelper')
+itchat.run()
+
+
+# # 采用定时给文件助手发送消息的机制保证网页微信不退出，刷新时间为一小时
+# login_info = 'itchatbot has been login, time:' + \
+#              datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
+# itchat.send(login_info, toUserName='filehelper')
+# while True:
+#     time.sleep(60 * 60)
+#     refresh_info = 'itchatbot has been refreshed, time:' + \
+#                    datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
+#     itchat.send(refresh_info, toUserName='filehelper')

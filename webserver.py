@@ -33,6 +33,8 @@ def reboot():
     if request.form.get('reboot') == 'shaomina':
         os.system(
             'ps -ef | grep main.py | grep -v grep | cut -c 9-15 | xargs kill -s 9')
+        time.sleep(1.5)
+        os.system('sh  /home/pi/itchatrobot/start.sh')
 
         return alert('重启服务成功,请扫描登录')
     else:
