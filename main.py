@@ -6,11 +6,12 @@ import logging
 from datetime import datetime
 
 
+
 @itchat.msg_register('Text')
+
 def text_reply(msg):
     global ms
-    ms = msg.fromUserName
-    print ms
+    ms= msg.fromUserName
     if u'查看日志' in msg['Text']:
         itchat.send_file(fileDir='logs/log.log', toUserName=msg['FromUserName'])
         # itchat.send(u'测试内容测试内容', toUserName=msg['FromUserName'])
@@ -28,12 +29,11 @@ def text_reply(msg):
                          toUserName=msg['FromUserName'])
     # # itchat.send('@img@applaud.gif', msg['FromUserName'])  # there should be a picture
     elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
-        itchat.send_msg(get_response(msg['Text']), toUserName=msg['FromUserName'])
+        itchat.send_msg(get_response(msg['Text']),toUserName=msg['FromUserName'])
     else:
-        ms = msg['FromUserName']
-        ms_xiaobing = itchat.get_mps()[0]['UserName']
+        ms = msg.fromUserName
         # return get_response(msg['Text']) or u'收到：' + msg['Text']
-        itchat.send_msg(msg['Text'], ms_xiaobing)
+        itchat.send_msg(msg['Text'],'@99e92e57f8323524aee348c250847dae')
 
 
 @itchat.msg_register(['Picture', 'Recording', 'Attachment', 'Video'])
@@ -57,7 +57,6 @@ def mm_reply(msg):
 
 @itchat.msg_register('Text', isGroupChat=True)
 def group_reply(msg):
-    global ms
     if msg['isAt']:
         a = msg['Text']
         # print a
@@ -74,25 +73,18 @@ def group_reply(msg):
         elif u'获取图片' in msg['Text']:
             # there should be a picture
             itchat.send('@img@applaud.gif', msg['FromUserName'])
-        elif u'电话' in msg['Text'] or u'手机' in msg['Text']:
-            itchat.send_msg(get_response(msg_rel), toUserName=msg['FromUserName'])
         else:
-            print msg['Text'], msg['FromUserName']
-            ms = msg['FromUserName']
-            ms_xiaobing = itchat.get_mps()[0]['UserName']
-            itchat.send_msg(msg_rel, ms_xiaobing)
             # print msg_rel
-            # itchat.send(u'@%s\u2005 %s' % (
-            #     msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
+            itchat.send(u'@%s\u2005 %s' % (
+                msg['ActualNickName'], get_response(msg_rel)), msg['FromUserName'])
 
 
-# 公众号微软小冰的回复转发
-@itchat.msg_register('Text', isMpChat=True)
+#公众号微软小冰的回复转发
+@itchat.msg_register('Text',isMpChat=True)
 def group_reply(msg):
-    print msg['Text'], msg['FromUserName']
+    itchat.send_msg(msg.text,ms)
+    logging.warning(msg.text+'from xiaobing')
 
-    itchat.send_msg(msg['Text'], ms)
-    logging.warning(msg['Text'] + 'from xiaobing')
 
 
 # TODO:增加群管理功能，自动加人 踢人
@@ -102,7 +94,7 @@ def group_join_note(msg):
     logging.warning(msg['Content'])
     logging.warning(msg['Text'])
     if u'邀请' in msg['Content'] or u'invited' in msg['Content']:
-        str_content = msg['Content']
+        str_content = msg['Content'];
         pos_start = str_content.find('"')
         pos_end = str_content.find('"', pos_start + 1)
         inviter = str_content[pos_start + 1:pos_end]
@@ -113,13 +105,14 @@ def group_join_note(msg):
 
 
 itchat.auto_login(True, enableCmdQR=False)
-itchat.run(blockThread=False)
-# 采用定时给文件助手发送消息的机制保证网页微信不退出，刷新时间为一小时
-login_info = 'itchatbot has been login, time:' + \
-             datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
-itchat.send(login_info, toUserName='filehelper')
-while True:
-    time.sleep(60 * 60)
-    refresh_info = 'itchatbot has been refreshed, time:' + \
-                   datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
-    itchat.send(refresh_info, toUserName='filehelper')
+itchat.run()
+# itchat.run(blockThread=False)
+# # 采用定时给文件助手发送消息的机制保证网页微信不退出，刷新时间为一小时
+# login_info = 'itchatbot has been login, time:' + \
+#              datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
+# itchat.send(login_info, toUserName='filehelper')
+# while True:
+#     time.sleep(60 * 60)
+#     refresh_info = 'itchatbot has been refreshed, time:' + \
+#                    datetime.now().strftime('%Y-%m-%d:%H:%M:%S')
+#     itchat.send(refresh_info, toUserName='filehelper')
