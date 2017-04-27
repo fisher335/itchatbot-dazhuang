@@ -93,9 +93,9 @@ def group_reply(msg):
 @itchat.msg_register('Text',isMpChat=True)
 def group_reply(msg):
     print msg['Text'],msg['FromUserName']
-
-    itchat.send_msg(msg['Text'],ms)
-    logging.warning(msg['Text']+'from xiaobing')
+    if itchat.get_mps()[0]['UserName'] == msg['FromUserName']:
+        itchat.send_msg(msg['Text'],ms)
+        logging.warning(msg['Text']+'from xiaobing')
 
 
 
@@ -116,7 +116,7 @@ def group_join_note(msg):
         itchat.send_msg(u"@%s 欢迎来到本群[微笑]，感谢%s邀请。" % (invitee, inviter), msg['FromUserName'])
 
 
-itchat.auto_login(True, enableCmdQR=False)
+itchat.auto_login(True, enableCmdQR=-1)
 itchat.run()
 
 
