@@ -1,0 +1,133 @@
+2017-04-27 22:53:02  login.py[line:40]  INFO  Getting uuid of QR code.
+2017-04-27 22:53:02  login.py[line:43]  INFO  Downloading QR code.
+2017-04-27 22:53:02  login.py[line:46]  INFO  Please scan the QR code to log in.
+2017-04-27 22:53:30  login.py[line:56]  INFO  Please press confirm on your phone.
+2017-04-27 22:53:33  login.py[line:65]  INFO  Loading the contact, this may take a little while.
+2017-04-27 22:53:34  login.py[line:75]  INFO  Login successfully as feng
+2017-04-27 22:53:34  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 22:53:47  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 14, in text_reply
+    ms.write(msg['fromUserName'])
+UnboundLocalError: local variable 'ms' referenced before assignment
+
+2017-04-27 22:55:01  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 22:55:01  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 14, in text_reply
+    ms.write(msg['fromUserName'])
+  File "/usr/local/lib/python2.7/dist-packages/itchat/storage/messagequeue.py", line 26, in __getitem__
+    return super(Message, self).__getitem__(value)
+KeyError: 'fromUserName'
+
+2017-04-27 22:55:20  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 22:55:41  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 14, in text_reply
+    ms.write(msg['fromUserName'])
+  File "/usr/local/lib/python2.7/dist-packages/itchat/storage/messagequeue.py", line 26, in __getitem__
+    return super(Message, self).__getitem__(value)
+KeyError: 'fromUserName'
+
+2017-04-27 22:56:13  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 22:56:15  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 97, in group_reply
+    itchat.send_msg(msg['Text'],ms.getvalue())
+NameError: global name 'ms' is not defined
+
+2017-04-27 23:10:46  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:10:46  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 97, in group_reply
+    itchat.send_msg(msg['Text'],ms)
+NameError: global name 'ms' is not defined
+
+2017-04-27 23:11:16  register.py[line:97]  INFO  Bye~
+2017-04-27 23:11:19  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:11:23  register.py[line:97]  INFO  Bye~
+2017-04-27 23:11:26  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:12:24  register.py[line:97]  INFO  Bye~
+2017-04-27 23:12:27  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:12:31  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:12:47  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 97, in group_reply
+    itchat.send_msg(msg['Text'],ms.getvalue())
+NameError: global name 'ms' is not defined
+
+2017-04-27 23:13:19  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:13:19  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 97, in group_reply
+    itchat.send_msg(msg['Text'],ms)
+NameError: global name 'ms' is not defined
+
+2017-04-27 23:13:20  register.py[line:97]  INFO  Bye~
+2017-04-27 23:13:22  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:13:29  main.py[line:98]  WARNING  你好，我是微软小冰，公众号请我来他家帮忙啦。我会陪你聊天, 还会告诉你公众号里所有好玩儿的东东[嘻嘻]和我聊的越多，我越聪明哦~.有好多独家秘技，等你探索哪~from xiaobing
+2017-04-27 23:13:44  main.py[line:98]  WARNING  怎么 不会 呢from xiaobing
+2017-04-27 23:20:37  main.py[line:98]  WARNING  试过请分享~from xiaobing
+2017-04-27 23:20:45  main.py[line:98]  WARNING  试什么..from xiaobing
+2017-04-27 23:21:42  main.py[line:98]  WARNING  刷新在哪里from xiaobing
+2017-04-27 23:25:04  main.py[line:98]  WARNING  你好，我是微软小冰，公众号请我来他家帮忙啦。我会陪你聊天, 还会告诉你公众号里所有好玩儿的东东[嘻嘻]和我聊的越多，我越聪明哦~.有好多独家秘技，等你探索哪~from xiaobing
+2017-04-27 23:25:05  main.py[line:98]  WARNING  你好，我是微软小冰，公众号请我来他家帮忙啦。我会陪你聊天, 还会告诉你公众号里所有好玩儿的东东[嘻嘻]和我聊的越多，我越聪明哦~.有好多独家秘技，等你探索哪~from xiaobing
+2017-04-27 23:25:14  register.py[line:97]  INFO  Bye~
+2017-04-27 23:32:00  register.py[line:85]  INFO  Start auto replying.
+2017-04-27 23:32:17  main.py[line:98]  WARNING  叫哥哥>:-<from xiaobing
+2017-04-27 23:32:27  main.py[line:98]  WARNING  好吧.哥...from xiaobing
+2017-04-27 23:32:36  main.py[line:98]  WARNING  喝不了酒 咖啡from xiaobing
+2017-04-27 23:33:57  register.py[line:97]  INFO  Bye~
+2017-04-28 00:07:06  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:08:54  register.py[line:97]  INFO  Bye~
+2017-04-28 00:08:56  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:09:10  register.py[line:64]  WARNING  Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/register.py", line 60, in configured_reply
+    r = replyFn(msg)
+  File "/home/pi/PycharmProjects/itchatbot-dazhuang/main.py", line 97, in group_reply
+    itchat.send_msg(msg['Text'],ms)
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/messages.py", line 278, in send_msg
+    r = self.send_raw_msg(1, msg, toUserName)
+  File "/usr/local/lib/python2.7/dist-packages/itchat/components/messages.py", line 273, in send_raw_msg
+    data=json.dumps(data, ensure_ascii=False).encode('utf8'))
+  File "/usr/lib/python2.7/json/__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "/usr/lib/python2.7/json/encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python2.7/json/encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python2.7/json/encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <function download_fn at 0x7f99baf0f7d0> is not JSON serializable
+
+2017-04-28 00:14:43  register.py[line:97]  INFO  Bye~
+2017-04-28 00:14:46  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:14:57  register.py[line:97]  INFO  Bye~
+2017-04-28 00:15:00  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:15:10  main.py[line:98]  WARNING  老说一样的，有意思吗？？？from xiaobing
+2017-04-28 00:15:22  main.py[line:98]  WARNING  终于好好说话啦~~from xiaobing
+2017-04-28 00:15:42  main.py[line:108]  WARNING  Picture receivedfrom xiaobing
+2017-04-28 00:15:45  main.py[line:98]  WARNING  这。。。美貌如我也穿不好看。。。from xiaobing
+2017-04-28 00:16:25  register.py[line:97]  INFO  Bye~
+2017-04-28 00:16:27  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:16:54  main.py[line:109]  WARNING  Picture receivedfrom xiaobing
+2017-04-28 00:16:57  main.py[line:98]  WARNING  非常喜欢她，演的女人一个个都像出水芙蓉~from xiaobing
+2017-04-28 00:17:59  register.py[line:97]  INFO  Bye~
+2017-04-28 00:18:02  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:18:19  main.py[line:109]  WARNING  Picture receivedfrom xiaobing
+2017-04-28 00:18:22  main.py[line:98]  WARNING  哇噻，好漂亮的裙子~from xiaobing
+2017-04-28 00:19:06  register.py[line:97]  INFO  Bye~
+2017-04-28 00:19:09  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:19:26  main.py[line:109]  WARNING  Picture receivedfrom xiaobing
+2017-04-28 00:19:57  main.py[line:109]  WARNING  Recording receivedfrom xiaobing
+2017-04-28 00:24:00  register.py[line:97]  INFO  Bye~
+2017-04-28 00:24:03  register.py[line:85]  INFO  Start auto replying.
+2017-04-28 00:24:13  main.py[line:110]  WARNING  Picture receivedfrom xiaobing
+2017-04-28 00:28:39  register.py[line:97]  INFO  Bye~

@@ -2,6 +2,7 @@
 import itchat
 from ai import get_response
 import time
+import os
 import logging
 from datetime import datetime
 
@@ -92,10 +93,23 @@ def group_reply(msg):
 #公众号微软小冰的回复转发
 @itchat.msg_register('Text',isMpChat=True)
 def group_reply(msg):
-    print msg['Text'],msg['FromUserName']
+    print msg['Text'],msg['FromUserName'],msg['Type']+'-----------text'
     if itchat.get_mps()[0]['UserName'] == msg['FromUserName']:
         itchat.send_msg(msg['Text'],ms)
         logging.warning(msg['Text']+'from xiaobing')
+
+#公众号微软小冰的回复转发
+@itchat.msg_register(['Picture', 'Recording', 'Attachment', 'Video'],isMpChat=True)
+def group_reply_else(msg):
+    print msg['Text'],msg['FromUserName'],msg['Type']
+    if itchat.get_mps()[0]['UserName'] == msg['FromUserName']:
+        msg.download(os.path.join('attach',msg.fileName))
+        itchat.send('@%s@%s' % (
+            'img' if msg['Type'] == 'Picture' else 'fil', os.path.join('attach',msg.fileName)),
+            ms)
+        logging.warning('%s received' % msg['Type']+'from xiaobing')
+
+
 
 
 
